@@ -2,8 +2,44 @@
 <html>
     <head>
         <title>Test</title>
+        <style>
+            article {
+                background-color:aqua;
+            }
+        </style>
+        <link rel="stylesheet" href="css\style.css">
     </head>
+
     <body>
-        <hi>Hello World!!!</hi>
+        <header>
+            <h1 style="background-color:aliceblue;">Ini Titles</h1>
+        </header>
+
+        <section>
+            <header>
+                <h2>Ini Titles</h2>
+            </header>
+            <p>Ini Konten</p>
+
+            <article>
+                <header>
+                    <h2>Ini Titles</h2>
+                </header>
+
+                <p>Ini Konten</p>
+            </article>
+            
+            <button onclick="turnOn()" style="background-color:green">Saklar On</button>
+            <button onclick="turnOff()" style="background-color:red">Saklar Off</button>
+        </section>
+
+        <script>
+            function turnOn() {
+                alert('Lampunya Berhasil Menyala');
+            }
+            function turnOff() {
+                alert('Lampunya Dimatikan!');
+            }
+        </script>
     </body>
 </html>
